@@ -1,0 +1,51 @@
+name: Sync Instagram feed
+
+on:
+  schedule:
+    # GitHub's shortest reliable schedule. Runs may be delayed at busy times.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Sync the latest Instagram posts
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_USERNAME: tiptoesghana
+        run: |
+          if [ -z "$IG_ACCESS_TOKEN" ]; then
+            echo "IG_ACCESS_TOKEN is not configured. Add it in Settings → Secrets and variables → Actions."
+            echo "Skipping live sync; the saved edit stays live."
+            exit 0
+          fi
+          npm run sync
+
+      - name: Commit new posts
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No feed changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/instagram.json assets/live
+          git commit -m "chore: sync Instagram feed"
+          git push

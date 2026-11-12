@@ -1,0 +1,17 @@
+.env
+.env.local
+node_modules/
+.DS_Store
+*.log
+
+# Local scraping / research artifacts (not part of the site)
+_source/
+api.json
+embed.html
+profile.html
+instanav.html
+viewer.html
+out.json
+web_profile.json
+rss.xml
+rss_test.xml

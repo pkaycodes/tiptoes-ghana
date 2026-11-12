@@ -1,0 +1,240 @@
+{
+  "account": {
+    "username": "tiptoesghana",
+    "name": "Tiptoes Ghana",
+    "avatar": "assets/logo-mark.png",
+    "followers": 2045,
+    "url": "https://www.instagram.com/tiptoesghana/"
+  },
+  "mode": "seed",
+  "updatedAt": "2026-11-12T12:00:00.000Z",
+  "posts": [
+    {
+      "id": "seed-DfpHe63Mp4G",
+      "shortcode": "DfpHe63Mp4G",
+      "image": "assets/img/campaign-black-friday.webp",
+      "permalink": "https://www.instagram.com/p/DfpHe63Mp4G/",
+      "timestamp": "2026-11-12T08:00:00.000Z",
+      "caption": "BLACK FRIDAY + CHRISTMAS SHOPPING AT TIPTOESGHANA… PERFECT COMBI.",
+      "mediaType": "IMAGE",
+      "category": "Campaign",
+      "title": "Black Friday + Christmas"
+    },
+    {
+      "id": "seed-DfouATpDKRA",
+      "shortcode": "DfouATpDKRA",
+      "image": "assets/img/editorial-green-dress.webp",
+      "permalink": "https://www.instagram.com/p/DfouATpDKRA/",
+      "timestamp": "2026-11-12T07:00:00.000Z",
+      "caption": "New in from the Tiptoes edit.",
+      "mediaType": "IMAGE",
+      "category": "Clothes",
+      "title": "The green stripe midi"
+    },
+    {
+      "id": "seed-Dfoq11hjNMw",
+      "shortcode": "Dfoq11hjNMw",
+      "image": "assets/img/product-brown-mules.webp",
+      "permalink": "https://www.instagram.com/p/Dfoq11hjNMw/",
+      "timestamp": "2026-11-12T06:00:00.000Z",
+      "caption": "The brown mule. New drop.",
+      "mediaType": "IMAGE",
+      "category": "Heels",
+      "title": "The brown mule"
+    },
+    {
+      "id": "seed-DfoqzVFjNSS",
+      "shortcode": "DfoqzVFjNSS",
+      "image": "assets/img/product-clear-pumps.webp",
+      "permalink": "https://www.instagram.com/p/DfoqzVFjNSS/",
+      "timestamp": "2026-11-12T05:00:00.000Z",
+      "caption": "A clear favourite.",
+      "mediaType": "IMAGE",
+      "category": "Heels",
+      "title": "The clear pump"
+    },
+    {
+      "id": "seed-Dfoqvn4jLoY",
+      "shortcode": "Dfoqvn4jLoY",
+      "image": "assets/img/product-white-eyelet-dress.webp",
+      "permalink": "https://www.instagram.com/p/Dfoqvn4jLoY/",
+      "timestamp": "2026-11-12T04:00:00.000Z",
+      "caption": "White eyelet, forever.",
+      "mediaType": "IMAGE",
+      "category": "Clothes",
+      "title": "The eyelet dress"
+    },
+    {
+      "id": "seed-Dfn3fZCDMVG",
+      "shortcode": "Dfn3fZCDMVG",
+      "image": "assets/img/product-gold-heeled-sandals.webp",
+      "permalink": "https://www.instagram.com/p/Dfn3fZCDMVG/",
+      "timestamp": "2026-11-11T16:00:00.000Z",
+      "caption": "Gold strappy season.",
+      "mediaType": "IMAGE",
+      "category": "Heels",
+      "title": "The gold sandal"
+    },
+    {
+      "id": "seed-Dfn3ZLUjM_Y",
+      "shortcode": "Dfn3ZLUjM_Y",
+      "image": "assets/img/product-gold-strappy-heels.webp",
+      "permalink": "https://www.instagram.com/p/Dfn3ZLUjM_Y/",
+      "timestamp": "2026-11-11T15:00:00.000Z",
+      "caption": "These beautiful heels are available as seen. Size 36–42.",
+      "mediaType": "IMAGE",
+      "category": "Heels",
+      "title": "The strappy gold heel",
+      "sizes": "Sizes 36–42"
+    },
+    {
+      "id": "seed-DfkBkovDIB8",
+      "shortcode": "DfkBkovDIB8",
+      "image": "assets/img/product-chocolate-slingback.webp",
+      "permalink": "https://www.instagram.com/p/DfkBkovDIB8/",
+      "timestamp": "2026-11-10T14:00:00.000Z",
+      "caption": "The chocolate slingback.",
+      "mediaType": "IMAGE",
+      "category": "Heels",
+      "title": "The chocolate slingback"
+    },
+    {
+      "id": "seed-DfkAbNLjMhs",
+      "shortcode": "DfkAbNLjMhs",
+      "image": "assets/img/product-pink-loafers.webp",
+      "permalink": "https://www.instagram.com/p/DfkAbNLjMhs/",
+      "timestamp": "2026-11-10T13:00:00.000Z",
+      "caption": "Soft pink loafers, hard to resist.",
+      "mediaType": "IMAGE",
+      "category": "Heels",
+      "title": "The pink loafer"
+    },
+    {
+      "id": "seed-C6Q0Bt0iAtr",
+      "shortcode": "C6Q0Bt0iAtr",
+      "image": "assets/img/brand-collage.webp",
+      "permalink": "https://www.instagram.com/p/C6Q0Bt0iAtr/",
+      "timestamp": "2026-11-08T12:00:00.000Z",
+      "caption": "The brands behind the edit — ASOS, Zara, Shein, Mango, River Island and more.",
+      "mediaType": "IMAGE",
+      "category": "Campaign",
+      "title": "The brands we source"
+    },
+    {
+      "id": "seed-DWofvyIjPdn",
+      "shortcode": "DWofvyIjPdn",
+      "image": "assets/img/product-black-tote.webp",
+      "permalink": "https://www.instagram.com/p/DWofvyIjPdn/",
+      "timestamp": "2026-11-04T12:00:00.000Z",
+      "caption": "The everyday tote.",
+      "mediaType": "IMAGE",
+      "category": "Bags",
+      "title": "The everyday tote",
+      "sizes": "One size"
+    },
+    {
+      "id": "seed-DfWyxuOiB6s",
+      "shortcode": "DfWyxuOiB6s",
+      "image": "assets/img/hero-floral-bag.webp",
+      "permalink": "https://www.instagram.com/p/DfWyxuOiB6s/",
+      "timestamp": "2026-11-04T12:00:00.000Z",
+      "caption": "Your vision, exclusively curated for you.",
+      "mediaType": "IMAGE",
+      "category": "Bags",
+      "title": "The olive shoulder bag",
+      "sizes": "One size"
+    },
+    {
+      "id": "seed-lifestyle-yellow-floral",
+      "shortcode": "DfVbA1jjBXE",
+      "image": "assets/img/lifestyle-yellow-floral.webp",
+      "permalink": "https://www.instagram.com/p/DfVbA1jjBXE/",
+      "timestamp": "2026-11-04T11:00:00.000Z",
+      "caption": "Client cam — yellow florals, wide-leg denim and an olive shoulder bag.",
+      "mediaType": "IMAGE",
+      "category": "Tribe",
+      "title": "Client cam: yellow florals"
+    },
+    {
+      "id": "seed-lifestyle-yellow-floral-2",
+      "shortcode": "DffL8niDijN",
+      "image": "assets/img/lifestyle-yellow-floral-2.webp",
+      "permalink": "https://www.instagram.com/p/DffL8niDijN/",
+      "timestamp": "2026-11-04T10:00:00.000Z",
+      "caption": "Client cam — the full look, styled and delivered.",
+      "mediaType": "IMAGE",
+      "category": "Tribe",
+      "title": "Client cam: the full look"
+    },
+    {
+      "id": "seed-Ce4mWMsDs5T",
+      "shortcode": "Ce4mWMsDs5T",
+      "image": "assets/img/product-kayali-perfume.webp",
+      "permalink": "https://www.instagram.com/p/Ce4mWMsDs5T/",
+      "timestamp": "2026-10-27T12:00:00.000Z",
+      "caption": "KAYALI MUSK 12 available on preorder. 100ml GHC1,080 · 10ml GHC300.",
+      "mediaType": "IMAGE",
+      "category": "Perfume",
+      "title": "Kayali Musk 12",
+      "sizes": "100ml · 10ml"
+    },
+    {
+      "id": "seed-DbV4pMJjCHb",
+      "shortcode": "DbV4pMJjCHb",
+      "image": "assets/img/product-black-bow-heels.webp",
+      "permalink": "https://www.instagram.com/p/DbV4pMJjCHb/",
+      "timestamp": "2026-10-20T12:00:00.000Z",
+      "caption": "The bow heel.",
+      "mediaType": "IMAGE",
+      "category": "Heels",
+      "title": "The bow heel"
+    },
+    {
+      "id": "seed-DWRWyiqDKaJ",
+      "shortcode": "DWRWyiqDKaJ",
+      "image": "assets/img/product-beige-dress.webp",
+      "permalink": "https://www.instagram.com/p/DWRWyiqDKaJ/",
+      "timestamp": "2026-10-15T12:00:00.000Z",
+      "caption": "The ruched dress, in beige.",
+      "mediaType": "IMAGE",
+      "category": "Clothes",
+      "title": "The ruched dress",
+      "sizes": "Sizes UK 6–14"
+    },
+    {
+      "id": "seed-DWohh7gjHK8",
+      "shortcode": "DWohh7gjHK8",
+      "image": "assets/img/product-denim-dress.webp",
+      "permalink": "https://www.instagram.com/p/DWohh7gjHK8/",
+      "timestamp": "2026-10-12T12:00:00.000Z",
+      "caption": "Denim, but make it a dress.",
+      "mediaType": "IMAGE",
+      "category": "Clothes",
+      "title": "The denim dress",
+      "sizes": "Sizes UK 4–16"
+    },
+    {
+      "id": "seed-DfevsNIFhSZ",
+      "shortcode": "DfevsNIFhSZ",
+      "image": "assets/img/product-pink-mule.webp",
+      "permalink": "https://www.instagram.com/p/DfevsNIFhSZ/",
+      "timestamp": "2026-10-10T12:00:00.000Z",
+      "caption": "The pink mule.",
+      "mediaType": "IMAGE",
+      "category": "Heels",
+      "title": "The pink mule"
+    },
+    {
+      "id": "seed-DdxQZ6lCotE",
+      "shortcode": "DdxQZ6lCotE",
+      "image": "assets/img/beauty-flatlay.webp",
+      "permalink": "https://www.instagram.com/p/DdxQZ6lCotE/",
+      "timestamp": "2026-10-08T12:00:00.000Z",
+      "caption": "Bags, beauty and a little something extra.",
+      "mediaType": "IMAGE",
+      "category": "Beauty",
+      "title": "The beauty edit",
+      "sizes": "Beauty edit"
+    }
+  ]
+}
