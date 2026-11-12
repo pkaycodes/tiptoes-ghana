@@ -189,6 +189,8 @@ tiptoes-ghana/
 
 Categories used by the shop filters are `Heels`, `Bags`, `Perfume`, `Beauty` and `Clothes`. Anything else (for example `Campaign` or `Tribe`) still appears in the Instagram grid but is left out of the product edit.
 
+To hide a specific post from both the live API and the static feed, add its shortcode to `HIDDEN_SHORTCODES` in `lib/instagram.mjs` and to `HIDDEN_POSTS` in `script.js`. The unclear London street reel (`Daeja_bMkYK`) is already hidden.
+
 ---
 
 ## Notes

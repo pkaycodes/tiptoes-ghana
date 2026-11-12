@@ -21,6 +21,10 @@
     "data/instagram.json",
   ];
 
+  // Shortcodes/IDs hidden from the feed. Keep this in sync with
+  // HIDDEN_SHORTCODES in lib/instagram.mjs.
+  const HIDDEN_POSTS = new Set(["Daeja_bMkYK", "seed-Daeja_bMkYK"]);
+
   const FALLBACK_FEED = {
     account: {
       username: "tiptoesghana",
@@ -275,6 +279,7 @@
         };
       })
       .filter(Boolean)
+      .filter((post) => !HIDDEN_POSTS.has(post.id) && !HIDDEN_POSTS.has(post.shortcode))
       .sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
 
     return {
