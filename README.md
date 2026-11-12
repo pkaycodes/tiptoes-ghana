@@ -90,24 +90,40 @@ Example cron (every 10 minutes):
 
 ### 3. GitHub Pages (free demo hosting)
 
-The repository includes two GitHub Actions workflows:
-
-- `.github/workflows/pages.yml` — deploys the static site to GitHub Pages on every push to `main`.
-- `.github/workflows/sync-instagram.yml` — checks Instagram every 15 minutes, downloads new images into `assets/live/`, updates `data/instagram.json`, and commits the change. That commit triggers a fresh Pages deploy.
-
-To turn it on:
-
-1. Push the repo to GitHub.
-2. Open **Settings → Pages** and set **Source** to **GitHub Actions**.
-3. Add the Instagram token as a repository secret: **Settings → Secrets and variables → Actions → New repository secret**, named `IG_ACCESS_TOKEN`.
-4. Optional: add `IG_USER_ID` if you use Facebook Login for Business.
-5. Run **Actions → Sync Instagram feed → Run workflow** once to pull the current feed.
-
-The demo URL will look like:
+The demo is live at:
 
 ```text
-https://YOUR-USERNAME.github.io/tiptoes-ghana/
+https://pkaycodes.github.io/tiptoes-ghana/
 ```
+
+It is deployed from the `main` branch root, so every push republishes the site. The page uses the saved `data/instagram.json` feed on GitHub Pages (the Node API is not available there).
+
+**Refresh the saved feed:**
+
+```bash
+npm run sync
+git add data/instagram.json assets/live
+git commit -m "Sync Instagram feed"
+git push
+```
+
+The ready-to-use GitHub Actions workflows are kept in `deploy/github-actions/`:
+
+- `pages.yml` — deploy the static site to GitHub Pages.
+- `sync-instagram.yml` — check Instagram every 15 minutes, download new images into `assets/live/`, update `data/instagram.json`, and commit the change. That commit triggers a fresh Pages deploy.
+
+GitHub blocked automatic workflow installation when this repo was created because the CLI token lacks the `workflow` scope. To install them:
+
+```bash
+gh auth refresh -h github.com -s workflow
+mkdir -p .github/workflows
+cp deploy/github-actions/*.yml .github/workflows/
+git add .github/workflows
+git commit -m "Add GitHub Actions workflows"
+git push
+```
+
+Then add the token as a repository secret: **Settings → Secrets and variables → Actions → New repository secret**, named `IG_ACCESS_TOKEN` (and optionally `IG_USER_ID`). The sync workflow skips safely when the secret is missing.
 
 > GitHub’s scheduled workflows are not real-time and can be delayed during busy periods. The site still polls `data/instagram.json` every 30 seconds, so as soon as the workflow commits a new post, the open page picks it up on its next poll. For guaranteed instant updates, use the Node server option above.
 
@@ -143,9 +159,9 @@ tiptoes-ghana/
 │   ├── logo-full.png
 │   ├── logo-mark.png
 │   └── favicon.png
-├── .github/workflows/
-│   ├── pages.yml               # GitHub Pages deploy
-│   └── sync-instagram.yml      # scheduled feed sync
+├── deploy/github-actions/
+│   ├── pages.yml               # optional GitHub Pages deploy workflow
+│   └── sync-instagram.yml      # optional scheduled feed sync
 ├── .env.example
 └── package.json
 ```
