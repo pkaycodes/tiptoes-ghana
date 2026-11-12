@@ -12,6 +12,15 @@
   const FEED_REFRESH_MS = 30_000;
   const INITIAL_FEED_COUNT = 8;
 
+  // GitHub Pages (and local file previews) are static: skip the Node API
+  // endpoint and read the committed JSON directly.
+  const IS_STATIC_HOST =
+    location.protocol === "file:" || /\.github\.io$/i.test(location.hostname);
+  const FEED_ENDPOINTS = [
+    ...(IS_STATIC_HOST ? [] : ["/api/instagram"]),
+    "data/instagram.json",
+  ];
+
   const FALLBACK_FEED = {
     account: {
       username: "tiptoesghana",
@@ -515,7 +524,7 @@
     const previousIds = new Set(state.posts.map((post) => post.id));
     let payload = null;
 
-    for (const endpoint of ["/api/instagram", "data/instagram.json"]) {
+    for (const endpoint of FEED_ENDPOINTS) {
       try {
         const separator = endpoint.includes("?") ? "&" : "?";
         const response = await fetch(`${endpoint}${separator}_=${Date.now()}`, {
